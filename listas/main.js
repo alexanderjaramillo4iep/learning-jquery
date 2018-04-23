@@ -8,3 +8,9 @@ $('#crear-lista').click(evento => {
 	}
 	lista.appendTo('#prueba');
 });
+
+$("#nuevo-elemento").click(evento => {
+	var lista = $("#lista-tareas");
+	var texto = $("#nueva-tarea").val();
+	lista.append($('<li>', {text: texto}));
+});
