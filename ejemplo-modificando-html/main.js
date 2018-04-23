@@ -4,3 +4,6 @@ console.log('está funcionando!!');
  * elemento que tiene id prueba
  * */
 $('#prueba').html('ahora si está funcionando jquery');
+$('#boton-prueba').click(evento => {
+	alert('hiciste click!!');
+});
