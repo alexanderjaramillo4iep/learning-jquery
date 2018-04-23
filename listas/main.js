@@ -3,7 +3,8 @@ $("#prueba").html("Está funcionando jquery!!");
 
 $('#crear-lista').click(evento => {
 	var lista = $("<ul>");
-	lista.append($("<li>", { text: "elemento 1" }));
-	lista.append($("<li>", { text: "elemento 2" }));
+	for(var i = 1; i < 101; i++) {
+		lista.append($("<li>", { text: "elemento " + i }));
+	}
 	lista.appendTo('#prueba');
 });
