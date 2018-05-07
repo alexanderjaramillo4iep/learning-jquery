@@ -6,11 +6,17 @@ router.get('/', function(req, res, next) {
   res
     .status(200)
     .send({
-      mensaje: "hola",
+      nombre_tabla: "Datos de productos",
       datos: [
-        { usuario: "trului", email: "trului@prueba.com" },
-        { usuario: "regnaroki", email: "regnarok@prueba.com" },
-        { usuario: "ltrudi", email: "ltrudi@prueba.com" }
+        { producto: "pantalon blanco", categoria: "ropa", precio: "$60" },
+        { producto: "camisa negra", categoria: "ropa", precio: "$40" },
+        { producto: "zapatos rojos", categoria: "zapatería", precio: "$60" },
+        { producto: "pantalon blanco", categoria: "ropa", precio: "$60" },
+        { producto: "camisa negra", categoria: "ropa", precio: "$40" },
+        { producto: "zapatos rojos", categoria: "zapatería", precio: "$60" },
+        { producto: "pantalon blanco", categoria: "ropa", precio: "$60" },
+        { producto: "camisa negra", categoria: "ropa", precio: "$40" },
+        { producto: "zapatos rojos", categoria: "zapatería", precio: "$60" }
       ]
     });
 });
