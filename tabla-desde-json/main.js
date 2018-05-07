@@ -50,5 +50,6 @@ var createTable = () =>
      */
     $("#tabla").html(table);
   });
-
-createTable();
+setTimeout(() => {
+	createTable();
+}, 1000);
