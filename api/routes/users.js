@@ -6,17 +6,17 @@ router.get('/', function(req, res, next) {
   res
     .status(200)
     .send({
-      nombre_tabla: "Datos de productos",
-      datos: [
-        { producto: "pantalon blanco", categoria: "ropa", precio: "$60" },
-        { producto: "camisa negra", categoria: "ropa", precio: "$40" },
-        { producto: "zapatos rojos", categoria: "zapatería", precio: "$60" },
-        { producto: "pantalon blanco", categoria: "ropa", precio: "$60" },
-        { producto: "camisa negra", categoria: "ropa", precio: "$40" },
-        { producto: "zapatos rojos", categoria: "zapatería", precio: "$60" },
-        { producto: "pantalon blanco", categoria: "ropa", precio: "$60" },
-        { producto: "camisa negra", categoria: "ropa", precio: "$40" },
-        { producto: "zapatos rojos", categoria: "zapatería", precio: "$60" }
+      name: "Productos",
+      data: [
+        { Producto: "pantalon blanco", Categoría: "ropa", Precio: "$60" },
+        { Producto: "camisa negra", Categoría: "ropa", Precio: "$40" },
+        { Producto: "zapatos rojos", Categoría: "zapatería", Precio: "$60" },
+        { Producto: "pantalon blanco", Categoría: "ropa", Precio: "$60" },
+        { Producto: "camisa negra", Categoría: "ropa", Precio: "$40" },
+        { Producto: "zapatos rojos", Categoría: "zapatería", Precio: "$60" },
+        { Producto: "pantalon blanco", Categoría: "ropa", Precio: "$60" },
+        { Producto: "camisa negra", Categoría: "ropa", Precio: "$40" },
+        { Producto: "zapatos rojos", Categoría: "zapatería", Precio: "$60" }
       ]
     });
 });
