@@ -18,7 +18,9 @@ function obtenerDatos(funRta) {
 $("#crear-tabla").click(evento => {
   obtenerDatos(lista => {
     // creamos el elemento <table>
-    var tabla = $("<table>");
+	var tabla = $("<table>");
+	tabla.addClass("table");
+	tabla.addClass("table-dark");
     tabla[0].createCaption().innerHTML = lista.nombre_tabla;
     // creamos el elemento <tr>
     var fila = $("<tr>");

@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
+	
 	<head>
 		<meta charset="utf-8" />
 		<title>Creando tablas con Jquery</title>
-	</head>
-	<body>
-		<div id="tabla">
-			acá va a ir la tabla<br/>
-			<button id="crear-tabla">crear tabla</button>
-		</div>
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/pangolin.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
 
-		<script src="../js/jquery-3.3.1.min.js"></script>
-		<script src="main.js"></script>
-	</body>
+<body>
+	<div id="tabla" class="container table-responsive">
+		acá va a ir la tabla
+		<br/>
+		<button id="crear-tabla">crear tabla</button>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js" ></script>
+	<script src="../js/bootstrap.min.js" ></script>
+	<script src="main.js"></script>
+</body>
+
 </html>
