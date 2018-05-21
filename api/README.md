@@ -1,7 +1,10 @@
 # API de ejemplo para probar ajax de jquery
 
 ## nodemon tiene problemas con la recarga
-El problema se presenta con xxx yyy en linux
+El problema se presenta en linux con
+node v9.4.0
+npm v5.8.0
+nodemon v^1.17.4
 
 Al recargar el servidor nodemon, dice que el puerto está ocupado
 
