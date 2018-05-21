@@ -1,10 +1,10 @@
-var apiPath = "http://localhost:3000";
+var apiPath = "http://172.29.63.51:3000";
 
 /**
  * Definición de los datos que tendrá la tabla
  */
 var getData = (responseFunction) =>
-  $.ajax({ url: `${apiPath}/users` }).done(response => {
+  $.ajax({ url: `${apiPath}/clients` }).done(response => {
     console.log(response);
     responseFunction(response);
   });

@@ -1,4 +1,4 @@
-var rutaAPI = "http://172.29.63.51:3000";
+var rutaAPI = "http://172.29.62.52:3000";
 
 function obtenerDatos(funRta) {
   $.ajax({ url: `${rutaAPI}/users` }).done(lista => {
@@ -13,7 +13,7 @@ $("#crear-tabla").click(evento => {
     var tabla = $("<table>");
     tabla.addClass("table");
     tabla.addClass("table-dark");
-    tabla[0].createCaption().innerHTML = lista.nombre_tabla;
+    tabla[0].createCaption().innerHTML = lista.name;
     // creamos el elemento <tr>
     var fila = $("<tr>");
     // pegamos a la fila un elemento <td> con texto que lleva la columna
@@ -23,13 +23,13 @@ $("#crear-tabla").click(evento => {
     // pegamos a la tabla la fila
     tabla.append(fila);
 
-    $.each(lista.datos, function(i, dato) {
+    $.each(lista.data, function(i, dato) {
       // creamos el elemento <tr>
       fila = $("<tr>");
       // pegamos a la fila un elemento <td> con texto que lleva la columna
-      fila.append($("<td>", { text: dato.producto }));
-      fila.append($("<td>", { text: dato.categoria }));
-      fila.append($("<td>", { text: dato.precio }));
+		fila.append($("<td>", { text: dato.Producto }));
+		fila.append($("<td>", { text: dato['Categoría'] }));
+		fila.append($("<td>", { text: dato.Precio }));
       // pegamos a la tabla la fila
       tabla.append(fila);
     });

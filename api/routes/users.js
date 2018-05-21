@@ -6,17 +6,11 @@ router.get('/', function(req, res, next) {
   res
     .status(200)
     .send({
-      name: "Productos",
+      name: "Usuarios",
       data: [
-        { Producto: "pantalon blanco", Categoría: "ropa", Precio: "$60" },
-        { Producto: "camisa negra", Categoría: "ropa", Precio: "$40" },
-        { Producto: "zapatos rojos", Categoría: "zapatería", Precio: "$60" },
-        { Producto: "pantalon blanco", Categoría: "ropa", Precio: "$60" },
-        { Producto: "camisa negra", Categoría: "ropa", Precio: "$40" },
-        { Producto: "zapatos rojos", Categoría: "zapatería", Precio: "$60" },
-        { Producto: "pantalon blanco", Categoría: "ropa", Precio: "$60" },
-        { Producto: "camisa negra", Categoría: "ropa", Precio: "$40" },
-        { Producto: "zapatos rojos", Categoría: "zapatería", Precio: "$60" }
+        { Usuario: "Pepito", Email: "Pepito@prueba.com", Documento: "123456" },
+        { Usuario: "Rogancio", Email: "Rogancio@prueba.com", Documento: "129456" },
+        { Usuario: "Cheroky", Email: "Cheroky@prueba.com", Documento: "123856" }
       ]
     });
 });
